@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Sorting Visualizer</h1>
+    <label for="algorithm">Choose Sorting Algorithm:</label>
+    <select id="algorithm">
+        <option value="bubble">Bubble Sort</option>
+        <option value="insertion">Insertion Sort</option>
+        <option value="selection">Selection Sort</option>
+        <option value="quick">Quick Sort</option>
+        <option value="merge">Merge Sort</option>
+    </select>
+    <button onclick="startSorting()">Start Sorting</button>
+    <div id="bars"></div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
